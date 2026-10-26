@@ -1,0 +1,16 @@
+# name: Built-in, plus Gems and Bones tabs
+# extends: builtin
+# Everything not listed keeps its built-in tab. Tabs count from 1;
+# the built-in plan uses tabs 1-27, so these add tabs 28 and 29.
+item_id,tab,tab_name,item_name
+melvorD:Topaz,28,Gems,Topaz
+melvorD:Sapphire,28,Gems,Sapphire
+melvorD:Ruby,28,Gems,Ruby
+melvorD:Emerald,28,Gems,Emerald
+melvorD:Diamond,28,Gems,Diamond
+melvorF:Jadestone,28,Gems,Jadestone
+melvorD:Bones,29,Bones,Bones
+melvorD:Big_Bones,29,Bones,Big Bones
+melvorD:Dragon_Bones,29,Bones,Dragon Bones
+melvorD:Magic_Bones,29,Bones,Magic Bones
+melvorTotH:Infernal_Bones,29,Bones,Infernal Bones

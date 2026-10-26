@@ -1,0 +1,10 @@
+# name: A plan from scratch
+# Only the items listed here are placed; every other item stays where it is.
+# Tabs count from 1.
+item_id,tab,tab_name
+melvorD:Bronze_Dagger,1,Combat
+melvorD:Bronze_Sword,1,Combat
+melvorD:Normal_Logs,2,Logs
+melvorD:Oak_Logs,2,Logs
+melvorD:Raw_Shrimp,3,Fish
+melvorD:Shrimp,3,Fish

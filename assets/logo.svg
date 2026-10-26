@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="1200" viewBox="0 -224 1024 1024">
+  <rect y="-224" width="1024" height="1024" fill="#1f2937"/>
+  <g transform="translate(64 160)">
+    <rect x="28" y="30" width="44" height="30" rx="8" fill="#f59e0b"/>
+    <rect x="80" y="36" width="44" height="24" rx="8" fill="#4b5563"/>
+    <rect x="132" y="36" width="44" height="24" rx="8" fill="#4b5563"/>
+    <rect x="184" y="36" width="44" height="24" rx="8" fill="#4b5563"/>
+    <rect x="20" y="58" width="216" height="178" rx="18" fill="#374151"/>
+    <rect x="38" y="76" width="50" height="42" rx="9" fill="#ef4444"/>
+    <rect x="103" y="76" width="50" height="42" rx="9" fill="#ef4444"/>
+    <rect x="168" y="76" width="50" height="42" rx="9" fill="#ef4444"/>
+    <rect x="38" y="128" width="50" height="42" rx="9" fill="#22c55e"/>
+    <rect x="103" y="128" width="50" height="42" rx="9" fill="#22c55e"/>
+    <rect x="168" y="128" width="50" height="42" rx="9" fill="#22c55e"/>
+    <rect x="38" y="180" width="50" height="42" rx="9" fill="#3b82f6"/>
+    <rect x="103" y="180" width="50" height="42" rx="9" fill="#3b82f6"/>
+    <rect x="168" y="180" width="50" height="42" rx="9" fill="#3b82f6" opacity="0.35"/>
+  </g>
+  <text x="372" y="290" font-family="Helvetica Neue, Helvetica, Arial, sans-serif" font-size="84" font-weight="700" fill="#f9fafb">Bank Layout</text>
+  <text x="376" y="350" font-family="Helvetica Neue, Helvetica, Arial, sans-serif" font-size="32" fill="#9ca3af">Every item in its planned tab</text>
+</svg>
