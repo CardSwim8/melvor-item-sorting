@@ -105,6 +105,24 @@ environment. Create a token with **read + write** scope at
 logged in to `gh` as the repo owner. Actions → Release → **Run workflow** checks
 the credentials without uploading.
 
+### The mod.io page
+
+The page's name, summary, description and homepage link come from `modio/`
+(`page.json`, `summary.txt`, `description.html`); the logo is
+`assets/logo.png`. To publish changes to them:
+
+1. Edit the files and push.
+2. Actions → **Update mod.io page** → Run workflow, with **Dry run** ticked
+   (the default). It shows what would change, and lists the tags Melvor Idle
+   allows.
+3. Run it again with **Dry run** unticked. Tick **Also upload the logo** to
+   replace the logo too.
+
+To manage tags, add `"tags": ["…"]` to `modio/page.json` using names from
+the dry run; the page's tags are then set to exactly that list. Without
+`tags`, the page's tags are left alone. A test checks the summary fits
+mod.io's 250 characters.
+
 ## License
 
 [MIT](LICENSE)

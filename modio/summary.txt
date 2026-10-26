@@ -1,0 +1,1 @@
+Sorts every item into a planned bank tab and makes new drops land there too. Use the built-in 27-tab plan (it wraps onto the tabs you own) or your own: save your bank as it is, or edit the plan as a spreadsheet.
