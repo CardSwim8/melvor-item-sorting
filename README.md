@@ -114,7 +114,7 @@ The page's name, summary, description and homepage link come from `modio/`
 1. Edit the files and push.
 2. Actions → **Update mod.io page** → Run workflow, with **Dry run** ticked
    (the default). It shows what would change, and lists the tags Melvor Idle
-   allows.
+   allows, if mod.io has a tag list for it.
 3. Run it again with **Dry run** unticked. Tick **Also upload the logo** to
    replace the logo too.
 

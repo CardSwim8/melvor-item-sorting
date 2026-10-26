@@ -78,7 +78,9 @@ async function main() {
   const modUrl = `${api}/games/${gameId}/mods/${modId}`;
   const headers = { Authorization: `Bearer ${token}`, Accept: "application/json" };
 
-  async function call(url, init) {
+  // Returns the reply, or exits on an error unless `optional`, which returns
+  // { error } instead.
+  async function call(url, init, optional = false) {
     const res = await fetch(url, { ...init, headers });
     const text = await res.text();
     let body;
@@ -89,6 +91,7 @@ async function main() {
     }
     if (!res.ok) {
       const detail = body?.error ? `${body.error.message}${body.error.errors ? " " + JSON.stringify(body.error.errors) : ""}` : text;
+      if (optional) return { error: `HTTP ${res.status}: ${detail}` };
       fail(`${init?.method ?? "GET"} ${url} -> ${res.status}: ${detail}`);
     }
     return body;
@@ -116,9 +119,15 @@ async function main() {
   let addTags = [];
   let removeTags = [];
   if (page.tags !== undefined || dryRun) {
-    const options = await call(`${api}/games/${gameId}/tag_options`);
+    // mod.io answers 404 when a game defines no tags.
+    const options = await call(`${api}/games/${gameId}/tag_options`, undefined, true);
+    if (options.error) {
+      if (page.tags !== undefined) fail(`page.json lists tags, but mod.io has no tag list for this game (${options.error}). Remove "tags" from page.json.`);
+      console.log(`  tags: this game has no tag list on mod.io (${options.error}); leaving tags alone.`);
+      options.data = [];
+    }
     const allowed = new Set(options.data.flatMap((o) => o.tags));
-    if (dryRun) {
+    if (dryRun && options.data.length) {
       console.log('Tags Melvor Idle allows (list the ones you want under "tags" in modio/page.json):');
       for (const o of options.data) console.log(`  ${o.name}${o.type === "checkboxes" ? " (any number)" : " (pick one)"}: ${o.tags.join(", ")}`);
     }
