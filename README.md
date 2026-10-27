@@ -64,8 +64,8 @@ Before a release, run the in-game checks in [docs/testing.md](docs/testing.md).
 | `src/plans.mjs`        | Pure logic for players' own plans: CSV/JSON import, CSV export, extending the built-in plan.       |
 | `src/model.mjs`        | Pure logic: target tabs, what moves, when to apply, messages. Tested without the game.             |
 | `src/manifest.json`    | Melvor mod manifest.                                                                               |
-| `src/icon.png`         | The 64×64 icon the mod manager shows. Rendered from `assets/icon.svg`.                             |
-| `assets/`              | Icon and mod.io logo sources (`logo.png` is 1024×576, for the mod.io page; not in the zip).        |
+| `src/icon.png`         | The 64×64 icon the mod manager and sidebar show. Drawn from Melvor's own bank and item art.        |
+| `assets/`              | The mod.io logo (`logo.png`, 1024×576, drawn from Melvor's own art; not in the zip).               |
 | `data/plan.json`       | The plan: item ID → planned tab. Checked and minified into the build.                              |
 | `data/item-index.json` | Append-only item order that saved plans are packed against. `npm run index` maintains it.          |
 | `docs/design.md`       | The design this was built from.                                                                    |
