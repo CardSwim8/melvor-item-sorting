@@ -9,6 +9,10 @@ Format: [Keep a Changelog](https://keepachangelog.com/en/1.1.0/). Versions follo
 
 ## [Unreleased]
 
+## [0.1.1]
+
+- New icon in the mod manager and the sidebar. No other changes.
+
 ## [0.1.0]
 
 - First release: moves every item into its planned bank tab (27 tabs, wrapped onto the tabs you own) and sets each item's default tab so new drops land there too.
