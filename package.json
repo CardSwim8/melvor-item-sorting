@@ -1,6 +1,6 @@
 {
   "name": "melvor-bank-layout",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Melvor Idle mod: sorts every item into a planned bank tab and makes new items land there too.",
   "license": "MIT",
   "private": true,
